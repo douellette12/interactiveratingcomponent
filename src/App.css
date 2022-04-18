@@ -1,0 +1,126 @@
+.App-header {
+  background-color:hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+}
+
+.App-container {
+  width: 18%;
+  height: 50%;
+  background-image: radial-gradient(circle farthest-side at 50% 0% , hsl(213, 19%, 18%) 0%, hsl(217, 28%, 13%) 100%);
+  border-radius: 30px;
+  padding: 35px;
+}
+
+.icon-container {
+  background-color: hsl(213, 19%, 18%);
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50%;
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.section-submit {
+  text-align: center;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+p {
+  color: hsl(216, 12%, 54%);
+  padding-bottom: 20px;
+}
+
+.rating__radio-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  user-select: none;
+  height: 50px;
+  width: 50px;
+  top: -5px;
+  left: -5px;
+}
+
+.rating__radio-container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rating__radio-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(216, 12%, 54%);
+}
+
+.rating__radio-container:hover input ~ .rating__radio-button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.rating__radio-container input:checked ~ .rating__radio-button {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.thank-you-wrapper {
+  text-align: center;
+}
+
+.thank-you-rating-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-rating {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  width: 200px; 
+  margin-top: 30px;
+  padding: 12px 0px 10px 0px;
+}
